@@ -1,0 +1,1 @@
+The idea is to create an AI assistant that is able to analyze notes from Obsidian and help to generate new ideas.
