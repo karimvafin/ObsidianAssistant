@@ -2,11 +2,10 @@ from VaultParser import read_obsidian_notes
 from Assistant import generate_response
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import login
-
-login(token='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')
+import os
 
 # Parse obsidian notes
-vault_path = '/Users/karimvafin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Work'
+vault_path = os.path.join(os.getcwd(), '/data')
 notes = read_obsidian_notes(vault_path)
 print(notes)
 
